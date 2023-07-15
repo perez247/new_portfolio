@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Ariweriokuma Excellence Pere"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,11 +24,52 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>AE Pere</title>
+
+    <style>
+      .preloader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        position: relative;
+      }
+  
+      .rotate {
+        animation: rotation 1s infinite linear;
+      }
+  
+      .size {
+        width: 10em;
+        height: 10em;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      @keyframes rotation {
+        0%, 100% {
+          top: 100px;
+        }
+        50% {
+          top: 90px;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="preloader">
+        <div>
+          <img src="/projects/new_me/new_me.png" class="rotate size"  />
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -40,4 +81,6 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+  </script>
 </html>
